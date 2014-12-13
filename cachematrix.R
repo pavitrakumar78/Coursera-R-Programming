@@ -1,6 +1,6 @@
 ## The functions below are used to cache a matrix's inverse
 ## Since matrix inverse function are computationally expensive, 
-##it is usefull to cache the inverse of those matrices which are used repeadly.
+## it is usefull to cache the inverse of those matrices which are used repeadly.
 
 ## The function below(makeCacheMatrix) takes in a (invertible) matrix 
 ## and return a list of functions to set data, get data, getInverse, setInverse.
@@ -35,3 +35,4 @@ cacheInverse <- function(x, ...) {
         x$setInverse(m)
         m
 }
+
